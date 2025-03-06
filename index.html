@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/52f88a9773.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Food Ruiners</title>
+</head>
+
+<body>
+    <!-- Hero header section -->
+    <section class="hero-bg h-screen">
+        <header class="h-36 flex justify-center" role="navigation">
+            <nav class="flex justify-between w-4/5 items-center text-white">
+                <a href="index.html" class="georgia text-2xl font-semibold">Food Ruiners</a>
+                <div class="custom:flex lg:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="menu" class="uppercase text-sm font-semibold">
+                    <ul class="flex justify-around items-center nav-spacing">
+                        <button id="close-btn"
+                            class="custom:flex lg:hidden text-white focus:outline-none self-end mr-4 mt-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        <li class="p-4"><a href="./index.html">Our impact</a></li>
+                        <li class="p-4"><a href="#">Take action</a></li>
+                        <li class="p-4"><a href="#">About us</a></li>
+                        <li class="p-4"><a href="#">Contact</a></li>
+                    </ul>
+                    <a href="#"
+                        class="cta-btn inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-3xl text-sm font-bold poppins">Donate</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="relative flex justify-center items-center h-4/6 z-10">
+            <div class="w-4/5 text-white text-center md:text-left">
+                <h1 class="text-2xl sm:text-5xl font-bold georgia">Food today. Food<br> security tomorrow.</h1>
+                <p class="mt-4 text-sm md:text-lg noto-sans">
+                    Together we can prevent food waste in <br> San Francisco, while also fighting hunger.
+                </p>
+                <a href="#"
+                    class="inline-block bg-orange-500 hover:bg-orange-600 text-white rounded-3xl text-sm font-bold poppins mt-4 md:mt-8"
+                    style="padding: 1.0em 3.5em; margin-top: 2em;">
+                    Donate
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mission section -->
+    <section class="text-center  sections">
+        <h3 class="text-md font-semibold text-orange-600 tracking-widest uppercase mb-4 noto-sans"
+            style="margin-bottom: 1.3rem;">Our Mission</h3>
+        <p class="text-sm md:text-xl font-bold mt-2 georgia" style="color: #123456;">
+            Our mission is to help alleviate hunger in San Francisco, to help <br>
+            prevent waste and to create community
+        </p>
+        <div class="short-underline rounded-full"></div>
+    </section>
+
+    <section class="sections grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Text Content -->
+        <div class="text-[#123456] flex flex-col justify-center sm:items-center md:items-start">
+            <h3 class="font-semibold tracking-widest uppercase text-orange-600 noto-sans " style="margin-bottom: 1em;">
+                Our History</h3>
+            <h2 class="md:text-xl lg:text-3xl georgia font-semibold " style="margin-bottom: 0.9em; line-height: 38px;">
+                Stopping hunger and food waste in San Francisco since 1987</h2>
+            <p class="md:text-md lg:text-xl " style="margin-bottom: 1.5em; line-height: 37px;">
+                Our efforts focus on the immediate distribution of food while simultaneously
+                working on long-term strategies to address hunger and empower neighbors in need.
+            </p>
+            <a href="#" class="mt-4 inline-block font-semibold text-orange-600 hover:underline">
+                Learn More →
+            </a>
+        </div>
+
+        <!-- Image -->
+        <div>
+            <img src="./img/teamwork-hands-2.jpg" alt="Teamwork Hands" class="w-full">
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="sections grid grid-cols-1 sm:grid-cols-3 text-center gap-8">
+        <!-- Stat 1 -->
+        <div>
+            <h2 class="text-5xl georgia font-semibold text-yellow-600" style="margin-bottom: 0.4em;">
+                17,000</h2>
+            <p class="text-gray-700 font-semibold ">tons of food<br>rescued per week</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div>
+            <h2 class="text-5xl georgia font-semibold text-yellow-600" style="margin-bottom: 0.4em;">
+                20,000</h2>
+            <p class="text-gray-700 font-semibold ">meals provided<br>each week</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div>
+            <h2 class="text-5xl georgia font-semibold text-yellow-600" style="margin-bottom: 0.4em;">450
+            </h2>
+            <p class="text-gray-700 font-semibold ">partners involved<br>in our programs</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="sections grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Image Section -->
+        <div>
+            <img src="./img/testimonial-img-2.avif" alt="Testimonial Image" class="w-full">
+        </div>
+
+        <!-- Testimonial Content -->
+        <div class="text-gray-900 flex flex-col justify-center sm:items-center md:items-start">
+            <h3 class="text-md font-semibold tracking-widest uppercase text-orange-600 noto-sans"
+                style="margin-bottom: 1.5em; ">Testimonials</h3>
+            <p class="font-semibold sm:text-2xl md:text-md font-semibold text-gray-900 testimonial-quote"
+                style="margin-bottom: 1em; ">
+                I'm so grateful for Food Runners. What you are giving is helping out a lot of families
+                like mine
+                who wouldn’t make it in this city.
+            </p>
+            <p class="text-[#123456] mt-3 text-sm font-semibold uppercase">Julian, Local SF Resident</p>
+            <a href="#" class="mt-4 inline-block font-semibold text-orange-600 hover:underline"
+                style="margin-top: 2em;">
+                Read More →
+            </a>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="text-center  sections">
+        <h3 class="text-md font-semibold text-orange-600 tracking-widest uppercase mb-4 noto-sans"
+            style="margin-bottom: 1.3rem;">How to help</h3>
+        <p class="text-sm md:text-xl font-bold mt-2 georgia" style="color: #123456;">
+            With your support, we can relieve hunger in San Francisco and <br> prevent food waste.
+        </p>
+        <div class="short-underline rounded-full"></div>
+    </section>
+
+    <!-- Varieties Section -->
+    <section class="py-16 sections">
+        <div class="container mx-auto px-6">
+            <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Awareness Campaign Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-solid fa-bullhorn text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Awareness Campaign</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">Help us spread the word about food
+                        insecurity
+                        and our mission.</p>
+                </div>
+
+                <!-- Donate Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-solid fa-cart-plus text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Donate</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">There are many ways you or your
+                        company can generously give to food Ruiners. Find out what serves best for you.</p>
+                </div>
+
+                <!-- Volunteer Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-solid fa-handshake-angle text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Volunteer</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">Join us to help distribute food and
+                        assist in
+                        community programs.</p>
+                </div>
+
+                <!-- Sponsorship Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-regular fa-envelope text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Sponsorship</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">Partner with us to provide long-term
+                        solutions
+                        and greater impact.</p>
+                </div>
+
+                <!-- Tips & Tricks Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-solid fa-message text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Tips & Tricks</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">Learn effective ways to reduce food
+                        waste and
+                        support those in need.</p>
+                </div>
+
+                <!-- Events Card -->
+                <div
+                    class="p-6 text-center transition duration-300 hover:bg-[#f39632] hover:text-white group rounded-sm custom-shadow">
+                    <div class="text-center p-4">
+                        <i class="fa-regular fa-calendar-days text-7xl text-[#123456] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[#123456] group-hover:text-white">Events</h3>
+                    <p class="text-[#123456] mt-2 group-hover:text-white noto-sans">Participate in community events to
+                        spread
+                        awareness and make a difference.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Risk of Hunger -->
+    <section class="py-16 text-center px-6 hands-bg">
+        <div class="max-w-2xl mx-auto text-white">
+            <h2 class="text-2xl font-bold georgia" style="margin-bottom: 1.3em;">
+                1 in 4 people in San Francisco are at risk of hunger
+            </h2>
+            <p class=" text-md noto-sans" style="margin-bottom: 3.5em;">
+                Hunger is a serious problem in San Francisco. While the numbers are staggering, we believe that hunger
+                in our community is a solvable problem.
+            </p>
+            <a href="#" class=" px-6 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition">
+                LEARN MORE
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#173345] text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8 text-center md:text-left">
+          <!-- Contact Section -->
+          <div>
+            <h3 class="text-lg font-semibold">CONTACT</h3>
+            <p class="mt-2 ">2978 Washington St.<br>San Francisco, CA 94115<br>+1 (415) 925-7880</p>
+          </div>
+      
+          <!-- Get Involved Section -->
+          <div>
+            <h3 class="text-lg font-semibold">GET INVOLVED</h3>
+            <ul class="mt-2 space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Donate Food</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Donate Money</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Volunteer</a></li>
+            </ul>
+          </div>
+      
+          <!-- Learn More Section -->
+          <div>
+            <h3 class="text-lg font-semibold">LEARN MORE</h3>
+            <ul class="mt-2 space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">About Us</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Our Impact</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Our Stories</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-orange-400">Blog</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div>
+            <h3 class="text-lg font-semibold">CONNECT WITH US</h3>
+            <div class="flex justify-center md:justify-start mt-3 space-x-4">
+              <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

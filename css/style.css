@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.noto-sans {
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-bg {
+    position: relative;
+}
+
+.hero-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+    background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hero-bg.jpg') top/cover no-repeat;
+    filter: grayscale(100%) contrast(1.0);
+    z-index: -1;
+    /* Places the image behind the content and background-color */
+}
+
+.hands-bg {
+    position: relative;
+    width: 100%;
+}
+
+.hands-bg::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hands-stack-bg2.jpg') center/cover no-repeat;
+    filter: grayscale(100%) contrast(1.0);
+    z-index: -1;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-spacing>* {
+    margin-right: 3.2rem;
+}
+
+.sections {
+    padding: 3.5em 0 2em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.short-underline {
+    width: 60px;
+    margin: 1.5em auto;
+    height: 0.2em;
+    background-color: #F97316;
+
+}
+
+.testimonial-quote {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    color: #123456;
+}
+
+.testimonial-quote::before,
+.testimonial-quote::after {
+    font-size: 5rem;
+    /* Adjust the size of the quotation marks as needed */
+    color: #123456;
+    /* Adjust the color of the quotation marks as needed */
+    position: absolute;
+}
+
+.testimonial-quote::before {
+    content: '\201C';
+    /* Left double quotation mark */
+    top: -0.5em;
+    left: -0.5em;
+}
+
+.testimonial-quote::after {
+    content: '\201D';
+    /* Right double quotation mark */
+    bottom: -1.3em;
+    right: -0.2em;
+}
+
+.custom-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.1);
+        color: #f39632;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+#menu.show {
+    display: flex;
+}
+
+#menu ul li a {
+    border-bottom: 1px;
+}
+
+#menu ul li a:hover {
+    border-bottom: 1px solid #F97316;
+}
+
+
+.cta-btn {
+    display: inline-block;
+    padding: 1.0em 3.5em;
+}
+
+
+/* Media query to handle the menu display on larger screens */
+@media (min-width: 1120px) {
+    #menu {
+        display: flex !important;
+        position: relative;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row;
+        padding: 0 2em !important;
+    }
+
+
+}
+
+/* Custom breakpoint for 1120px */
+@media (max-width: 1119px) {
+    .custom\:hidden {
+        display: none !important;
+    }
+
+    .custom\:flex {
+        display: flex !important;
+    }
+
+    ul {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1em;
+        width: 100% !important;
+    }
+
+    ul li {
+        margin-bottom: 2em;
+        display: block !important;
+    }
+
+    ul li a {
+        display: block !important;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        text-align: center;
+        margin: 0 1em !important;
+        padding: 1.0em 3.5em;
+    }
+
+    #close-btn {
+        display: block;
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .sections {
+        padding: 2em 0 1em 0;
+
+    }
+}
+
+@media (max-width: 425px) {
+    #menu {
+        width: 100%;
+    }
+
+    .testimonial-quote::before,
+    .testimonial-quote::after {
+        font-size: 2rem;
+        /* Adjust the size of the quotation marks as needed */
+        color: #123456;
+        /* Adjust the color of the quotation marks as needed */
+        position: absolute;
+    }
+}
